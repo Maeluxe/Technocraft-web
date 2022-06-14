@@ -66,6 +66,16 @@ h1 {
 	border-radius: 20px;
 }
 
+.w1 {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.w {
+	background-color: rgba(255, 0, 0, 0.507);
+}
+
 .box {
 	display: flex;
     flex-direction: row;

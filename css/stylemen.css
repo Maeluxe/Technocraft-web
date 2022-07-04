@@ -1,0 +1,373 @@
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+body {
+	margin:0;
+	background-image:url(../Technocraft/dirt_minecraft.jpg);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+	transition: 0.5s;
+}
+
+body::-webkit-scrollbar {
+	width: 12px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0); /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0); /* color of the scroll thumb */
+	border-radius: 20px; /* roundness of the scroll thumb */
+	border: 3px solid rgba(255, 255, 255, 0); /* creates padding around scroll thumb */
+  }
+
+
+
+header {
+	background-color: white;
+}
+
+.header {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+	padding: 12px;
+}
+
+.logo_technocraft {
+    width: 10%;
+	transition: all 0.5s;
+}
+
+h1 {
+	margin: 0;
+	text-align: center;
+	margin-left:5px;
+	color: black;
+	
+}
+
+.c_est_quoi {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: antiquewhite;
+    padding: 12px;
+	margin: 0px 400px 27px 400px;
+    border-radius: 20px;
+	text-align: center;
+}
+
+.t1 {
+	display: flex;
+	justify-content: center;
+}
+
+.t {
+	text-decoration: none;
+	color:black;
+	background-color: white;
+	padding: 12px;
+	border-radius: 20px;
+}
+
+.navbar{
+	display: flex;
+	flex-direction:row ;
+	justify-content: space-evenly;
+}
+
+.divvidwik {
+    margin: 25px 0px;
+}
+
+.butwik{
+	color: black;
+	text-decoration: none;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.butvid{
+	color: black;
+	text-decoration: none;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.boutons{
+	display: flex;
+	flex-direction: column;
+	background-color: #FAEBD7;
+	margin: 20px 570px;
+	border-radius: 15px;
+}
+
+.col{
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.bouton{
+	background-color: white;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	transition: 0.5s;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -60px;
+	transition: 0.5s;
+}
+
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+	transition: 0.5s;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	transition: 0.5s;
+}
+
+	.insta{
+		text-decoration: underline;
+		color: white;
+	}
+
+	.insta:hover{
+		text-decoration: overline;
+		color: blue;
+	}
+
+.footer {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+	color: black;
+    padding: 12px;
+}
+
+
+footer {
+	background-color: white;
+	margin-top: auto;
+}
+
+/* ||||||||||||||||||||||||| BEGIN RESPONSIVE [MAEL] ||||||||||||||||||||||||| */
+/* ******************************* BEGIN /2560PX & +/ ****************************** */
+@media only screen and (min-width: 2560px){
+
+}
+/* ******************************* END /2560PX & +/ ****************************** */
+
+
+/* ******************************* BEGIN /1600PX/ ****************************** */
+@media only screen and (max-width: 1919px){}
+/* ******************************* END /1600PX/ ****************************** */
+
+
+/* ******************************* BEGIN /1440PX/ ****************************** */
+@media only screen and (max-width: 1599px){
+	.imghov {
+		width:90%;
+	}
+
+	.de {
+		font-size: 15px;
+	}
+}
+/* ******************************* END /1440PX/ ****************************** */
+
+
+/* ******************************* BEGIN /1366PX/ ****************************** */
+@media only screen and (max-width: 1439px){}
+/* ******************************* END /1366PX/ ****************************** */
+
+
+/* ******************************* BEGIN /1280PX/ ****************************** */
+@media only screen and (max-width: 1365px){
+	.imghov {
+		width:70%;
+	}
+}
+/* ******************************* END /1280PX/ ****************************** */
+
+
+/* ******************************* BEGIN /1024PX/ ****************************** */
+@media only screen and (max-width: 1279px){}
+/* ******************************* END /1024PX/ ****************************** */
+
+
+/* ******************************* BEGIN /992PX/ ****************************** */
+@media only screen and (max-width: 1023px){
+	.imghov {
+		width : 80%;
+	}
+	.c_est_quoi {
+		font-size: 15px;
+		margin: 27px 300px 27px 300px;
+	}
+}
+/* ******************************* END /992PX/ ****************************** */
+
+
+/* ******************************* BEGIN /768PX/ ****************************** */
+@media only screen and (max-width: 991px){
+	.wiki {
+		width: 705px;
+	}
+}
+/* ******************************* END /768PX/ ****************************** */
+
+
+/* ******************************* BEGIN /460PX/ ****************************** */
+@media all and (max-width: 767px){
+	
+	.c_est_quoi {
+		font-size: 15px;
+		margin: 27px 200px 27px 200px;
+	}
+
+	.wiki {
+		width: 605px;
+	}
+}
+/* ******************************* END /460PX/ ****************************** */
+
+@media only screen and (max-width: 675px){
+	.h2wik {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 649px){
+	.wiki {
+		width: 505px;
+	}
+}
+
+@media only screen and (max-width: 590px){
+	.header {
+		font-size: 20px;
+		height: 50px;
+	}
+
+	.footer {
+		height: 50px;
+	}
+
+	.logo_technocraft {
+		min-width: 50px;
+		width: 100%;
+		max-width: 166px;
+	}
+	.c_est_quoi {
+		font-size: 14px;
+		margin: 27px 73px 27px 73px;
+	}
+}
+
+@media only screen and (max-width: 565px){
+	.wiki {
+		width: 400px;
+	}
+}
+
+/* ******************************* BEGIN /414PX/ ****************************** */
+@media only screen and (max-width: 459px){
+
+	.button .button1 {
+		font-size: 70%;
+	}
+
+	.wiki {
+		width: 305px;
+	}
+}
+/* ******************************* END /414PX/ ****************************** */
+
+
+/* ******************************* BEGIN /375PX/ ****************************** */
+@media only screen and (max-width: 413px){
+	.header {
+		font-size: 15px;
+	}
+
+
+}
+/* ******************************* END /375PX/ ****************************** */
+
+
+/* ******************************* BEGIN /360PX/ ****************************** */
+@media only screen and (max-width: 374px){}
+/* ******************************* END /360PX/ ****************************** */
+
+@media only screen and (max-width: 362px){
+	.header {
+		font-size: 12px;
+	}
+}
+
+/* ******************************* BEGIN /320PX/ ****************************** */
+@media only screen and (max-width: 359px){	
+	.imghov {
+		width:60%;
+	}
+}
+/* ******************************* END /320PX/ ****************************** */
+/* |||||||||||||||||||||||||| END RESPONSIVE [MAEL] |||||||||||||||||||||||||| */
+ @media only screen and (max-height: 937px){
+	.wiki {
+		margin-top: 10vh;
+		margin-bottom: 10vh;
+	}
+ }
+
+
+
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */

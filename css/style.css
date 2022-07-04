@@ -15,12 +15,24 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+	transition: 0.5s;
 }
 
+body::-webkit-scrollbar {
+	width: 12px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: rgba(255, 166, 0, 0); /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: rgb(150, 150, 175); /* color of the scroll thumb */
+	border-radius: 20px; /* roundness of the scroll thumb */
+	border: 3px solid rgba(255, 166, 0, 0); /* creates padding around scroll thumb */
+  }
 
-.background {
-    background-position: initial;
-}
+
 
 header {
 	background-color: white;
@@ -45,6 +57,23 @@ h1 {
 	margin-left:5px;
 	color: black;
 	
+}
+
+.menu{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 25px;
+
+}
+
+.menua{
+	background-color: #fff;
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	border-radius: 20px;
 }
 
 .c_est_quoi {
@@ -77,6 +106,8 @@ h1 {
 .warning1 {
 	background-color: rgba(255, 0, 0, 0.507);
 	text-align: center;
+	padding: 5px;
+	border-radius: 15px;
 }
 
 .box {
@@ -135,17 +166,69 @@ h1 {
 .de {
 	padding: 15px;
 	text-align: center;
+	max-width: 50px;
+	width: 100%;
 }
 
 .d:hover footer {
 	margin-top: 1200px;
 }
 
+.bouton1 {
+	display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-around;
+	text-decoration: none;
+}
+
+.button1 {
+	display: inline-block;
+	border-radius: 20px;
+	background-color: white;
+	border: none;
+	text-align: center;
+	padding: 10px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	text-decoration: none;
+	color: black;
+  }
+  
+  .button1 span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	text-decoration: none;
+  }
+  
+  .button1 span:after {
+	content: '\00AB';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+	text-decoration: none;
+  }
+  
+  .button1:hover span {
+	padding-left: 25px;
+  }
+  
+  .button1:hover span:after {
+	opacity: 1;
+	right: 130px;
+  }
+
 .bouton {
 	display: flex;
     margin-bottom: 15px;
     align-items: center;
     justify-content: space-around;
+	text-decoration: none;
 }
 
 .button {
@@ -158,6 +241,8 @@ h1 {
 	transition: all 0.5s;
 	cursor: pointer;
 	margin: 5px;
+	text-decoration: none;
+	color: black;
   }
   
   .button span {
@@ -165,6 +250,7 @@ h1 {
 	display: inline-block;
 	position: relative;
 	transition: 0.5s;
+	text-decoration: none;
   }
   
   .button span:after {
@@ -174,6 +260,7 @@ h1 {
 	top: 0;
 	right: -20px;
 	transition: 0.5s;
+	text-decoration: none;
   }
   
   .button:hover span {
@@ -189,6 +276,7 @@ h1 {
 	position: relative;
 	display: inline-block;
 	border-bottom: 1px dotted black;
+	transition: 0.5s;
   }
   
   .tooltip .tooltiptext {
@@ -204,6 +292,7 @@ h1 {
 	bottom: 150%;
 	left: 50%;
 	margin-left: -60px;
+	transition: 0.5s;
   }
   
   .tooltip .tooltiptext::after {
@@ -215,10 +304,12 @@ h1 {
 	border-width: 5px;
 	border-style: solid;
 	border-color: black transparent transparent transparent;
+	transition: 0.5s;
   }
   
   .tooltip:hover .tooltiptext {
 	visibility: visible;
+	transition: 0.5s;
   }
 
 .footer {
@@ -350,7 +441,7 @@ footer {
 /* ******************************* BEGIN /414PX/ ****************************** */
 @media only screen and (max-width: 459px){
 
-	.button {
+	.button .button1 {
 		font-size: 70%;
 	}
 

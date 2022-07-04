@@ -59,13 +59,22 @@ h1 {
 	
 }
 
-.menu{
+.navbar{
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin-top: 25px;
+	flex-direction:row ;
+	justify-content: space-evenly;
+}
 
+.divvidwik {
+    margin-top: 25px;
+}
+
+.butvid{
+	color: black;
+	text-decoration: none;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 20px;
 }
 
 .menua{
@@ -82,19 +91,6 @@ h1 {
     padding: 12px;
     margin: 27px;
     border-radius: 20px;
-}
-
-.t1 {
-	display: flex;
-	justify-content: center;
-}
-
-.t {
-	text-decoration: none;
-	color:black;
-	background-color: white;
-	padding: 12px;
-	border-radius: 20px;
 }
 
 .warning {

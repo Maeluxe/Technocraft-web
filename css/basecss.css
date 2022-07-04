@@ -82,75 +82,15 @@ h1 {
 	text-decoration: none;
 	background-color: #fff;
 	padding: 10px;
-	border-radius: 20px;
+	border-radius: 15px;
 }
 
-.butvid{
-	color: black;
-	text-decoration: none;
+.menu{
 	background-color: #fff;
+	text-decoration: none;
+	color: black;
 	padding: 10px;
 	border-radius: 20px;
-}
-
-.boutons{
-	display: flex;
-	flex-direction: column;
-	background-color: #FAEBD7;
-	margin: 9px 570px;
-	border-radius: 20px;
-}
-
-.boutcf{
-	background-color: white;
-	padding: 15px;
-	border-radius: 20px;
-	font-size: 14px;
-	font-weight: bold;
-	color: #000;
-    box-shadow: 5px 5px 10px #00000036;
-	text-align: center;
-	margin: 15px 120px;
-}
-.boutcf:active{
-	box-shadow: inset -2px -1px 10px #00000036;
-}
-
-.col{
-    margin: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-
-.bouton {
-	background-color: white;
-    padding: 15px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #000;
-    box-shadow: 5px 5px 10px #00000036;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-	height: 100%;
-}
-
-.trans{
-	transition: 0.5s;
-	height: 0;
-	overflow: hidden;
-}
-
-.bouton:hover .trans {
-	height: 50px;
-}
-
-.pixel{
-    max-width: 50px;
-    max-height: 50px;
 }
 
 .tooltip {
@@ -230,8 +170,12 @@ footer {
 
 /* ******************************* BEGIN /1440PX/ ****************************** */
 @media only screen and (max-width: 1599px){
-	.boutons{
-		margin: 9px 200px;
+	.imghov {
+		width:90%;
+	}
+
+	.de {
+		font-size: 15px;
 	}
 }
 /* ******************************* END /1440PX/ ****************************** */
@@ -271,8 +215,8 @@ footer {
 
 /* ******************************* BEGIN /768PX/ ****************************** */
 @media only screen and (max-width: 991px){
-	.boutons{
-		margin: 9px 100px;
+	.wiki {
+		width: 705px;
 	}
 }
 /* ******************************* END /768PX/ ****************************** */
@@ -285,6 +229,10 @@ footer {
 		font-size: 15px;
 		margin: 27px 200px 27px 200px;
 	}
+
+	.wiki {
+		width: 605px;
+	}
 }
 /* ******************************* END /460PX/ ****************************** */
 
@@ -295,12 +243,8 @@ footer {
 }
 
 @media only screen and (max-width: 649px){
-	.col{
-		flex-direction: column;
-	}
-
-	.bouton{
-		margin: 10px;
+	.wiki {
+		width: 505px;
 	}
 }
 
@@ -326,8 +270,8 @@ footer {
 }
 
 @media only screen and (max-width: 565px){
-	.boutcf{
-		margin: 15px 50px;
+	.wiki {
+		width: 400px;
 	}
 }
 
@@ -351,20 +295,13 @@ footer {
 		font-size: 15px;
 	}
 
-	.boutcf{
-		margin: 15px 40px;
-	}
 
 }
 /* ******************************* END /375PX/ ****************************** */
 
 
 /* ******************************* BEGIN /360PX/ ****************************** */
-@media only screen and (max-width: 374px){
-	.boutcf{
-		margin: 15px 30px;
-	}
-}
+@media only screen and (max-width: 374px){}
 /* ******************************* END /360PX/ ****************************** */
 
 @media only screen and (max-width: 362px){
@@ -375,8 +312,8 @@ footer {
 
 /* ******************************* BEGIN /320PX/ ****************************** */
 @media only screen and (max-width: 359px){	
-	.boutcf{
-		margin: 15px 20px;
+	.imghov {
+		width:60%;
 	}
 }
 /* ******************************* END /320PX/ ****************************** */

@@ -1,3 +1,31 @@
+html, body {
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	overflow: overlay;
+  }
+  
+  ::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background: rgba(90, 90, 90);
+  }
+  
+  ::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0);
+  }
+
+
+
+
+
+
+
 p {
 	margin: 0;
 }
@@ -18,18 +46,9 @@ body {
 	transition: 0.5s;
 }
 
-body::-webkit-scrollbar {
-	width: 12px; /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-	background: rgba(255, 166, 0, 0); /* color of the tracking area */
-  }
-  
   body::-webkit-scrollbar-thumb {
-	background-color: rgb(150, 150, 175); /* color of the scroll thumb */
+	background-color: rgb(255, 255, 255); /* color of the scroll thumb */
 	border-radius: 20px; /* roundness of the scroll thumb */
-	border: 3px solid rgba(255, 166, 0, 0); /* creates padding around scroll thumb */
   }
 
 
@@ -89,8 +108,9 @@ h1 {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: antiquewhite;
     padding: 12px;
-    margin: 27px;
+    margin: 27px 360px;
     border-radius: 20px;
+	text-align: center;
 }
 
 .warning {
@@ -162,8 +182,8 @@ h1 {
 .de {
 	padding: 15px;
 	text-align: center;
-	max-width: 50px;
-	width: 100%;
+	width: 250px;
+
 }
 
 .d:hover footer {
@@ -174,7 +194,7 @@ h1 {
 	display: flex;
     margin-bottom: 15px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 	text-decoration: none;
 }
 
@@ -385,6 +405,12 @@ footer {
 }
 /* ******************************* END /768PX/ ****************************** */
 
+@media only screen and (max-width: 941px){
+	
+	.c_est_quoi{
+		margin: 27px 260px;
+	}
+}
 
 /* ******************************* BEGIN /460PX/ ****************************** */
 @media all and (max-width: 767px){
@@ -398,6 +424,13 @@ footer {
 	}
 }
 /* ******************************* END /460PX/ ****************************** */
+
+@media only screen and (max-width: 719px){
+	
+	.c_est_quoi{
+		margin: 27px 160px;
+	}
+}
 
 @media only screen and (max-width: 675px){
 	.h2wik {
@@ -431,6 +464,13 @@ footer {
 @media only screen and (max-width: 565px){
 	.wiki {
 		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 515px){
+	
+	.c_est_quoi{
+		margin: 27px 60px;
 	}
 }
 

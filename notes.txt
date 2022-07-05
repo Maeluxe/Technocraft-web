@@ -1,0 +1,5 @@
+format d'image ==> 496
+
+pour connexion==> faire le php + :le truc que on a appris hier
+
+mettre quand hover craft le gameplay
